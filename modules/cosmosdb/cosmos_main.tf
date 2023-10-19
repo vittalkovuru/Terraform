@@ -1,5 +1,5 @@
 resource "azurerm_cosmosdb_account" "db" {
-  name                = "techslate-ade-cosmosdb"
+  name                = "techslate-ade-vkcosmosdb"
   location            = var.location
   resource_group_name = var.rg_name
   offer_type          = "Standard"
@@ -38,4 +38,6 @@ resource "azurerm_cosmosdb_account" "db" {
     location          = "westus"
     failover_priority = 0
   }
+
+  
 }
